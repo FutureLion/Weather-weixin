@@ -165,13 +165,27 @@ function getWeather($keyword) {
 	$temp1=$weatherinfo->temp1;
 	$temp2=$weatherinfo->temp2;
 	$temp3=$weatherinfo->temp3;
+	$img1=$weatherinfo->img1;
+	$img2=$weatherinfo->img3;
+	$img3=$weatherinfo->img5;
+	$weather1=$weatherinfo->weather1;
+	$weather2=$weatherinfo->weather2;
+	$weather3=$weatherinfo->weather3;
+	$wind1=$weatherinfo->wind1;
+	$wind2=$weatherinfo->wind2;
+	$wind3=$weatherinfo->wind3;
 
+	$index=$weatherinfo->index;
+	$index_d=$weatherinfo->index_d;
+	$date_y=$weatherinfo->date_y;
+	
 	$array = array(
-			array("title"=>$city,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images.jpg","url"=>"http://www.baidu.com"),
-			array("title"=>"testnews","des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images.jpg","url"=>"http://www.baidu.com"),
-			array("title"=>"testnews","des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images.jpg","url"=>"http://www.baidu.com"),
-			array("title"=>"testnews","des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images.jpg","url"=>"http://www.baidu.com"),
-			array("title"=>"testnews","des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images.jpg","url"=>"http://www.baidu.com"),
+			array("title"=>$city,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/image.jpg","url"=>"#"),
+			array("title"=>$index_d,"des"=>"testdes"),
+			array("title"=>$date_y." ".$temp1." ".$weather1." ".$wind1,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images/".$img1.".png","url"=>"http://www.baidu.com"),
+			array("title"=>$temp2." ".$weather2." ".$wind2,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images/".$img2.".png","url"=>"http://www.baidu.com"),
+			array("title"=>$temp3." ".$weather3." ".$wind3,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images/".$img3.".png","url"=>"http://www.baidu.com"),
+			
 	);
 	return $array;
 }
