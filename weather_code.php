@@ -1,7 +1,4 @@
 <?php
-// author: sofish, https://github.com/sofish
-// licensed under: MIT
-
 $weather_code = array(
     '北京' => 101010100,
     '重庆' => 101040100,
