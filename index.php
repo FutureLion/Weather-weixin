@@ -180,11 +180,11 @@ function getWeather($keyword) {
 	$date_y=$weatherinfo->date_y;
 	
 	$array = array(
-			array("title"=>$city,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/image.jpg","url"=>"#"),
+			array("title"=>$city,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/image.jpg"),
 			array("title"=>$index_d,"des"=>"testdes"),
-			array("title"=>$date_y." ".$temp1." ".$weather1." ".$wind1,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images/".$img1.".png","url"=>"http://www.baidu.com"),
-			array("title"=>$temp2." ".$weather2." ".$wind2,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images/".$img2.".png","url"=>"http://www.baidu.com"),
-			array("title"=>$temp3." ".$weather3." ".$wind3,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images/".$img3.".png","url"=>"http://www.baidu.com"),
+			array("title"=>$date_y." ".$temp1." ".$weather1." ".$wind1,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images/".$img1.".png"),
+			array("title"=>$temp2." ".$weather2." ".$wind2,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images/".$img2.".png"),
+			array("title"=>$temp3." ".$weather3." ".$wind3,"des"=>"testdes","pic"=>"http://api.itcreating.com/weather/images/".$img3.".png"),
 			
 	);
 	return $array;
